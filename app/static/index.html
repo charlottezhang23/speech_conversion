@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>访谈转录与会议纪要 · 本地版</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">◎</div>
+      <span>访谈转录工作台</span>
+      <small>本地 · 离线 · 无上传</small>
+    </div>
+    <div class="spacer"></div>
+    <button class="status-pill" id="pill-ffmpeg" title="FFmpeg 状态"><span class="dot"></span>FFmpeg</button>
+    <button class="status-pill" id="pill-ollama" title="点击刷新 Ollama 状态"><span class="dot"></span>Ollama</button>
+    <button class="status-pill" id="pill-token" title="Hugging Face Token 状态"><span class="dot"></span>HF Token</button>
+    <button class="btn btn-sm" id="btn-settings">设置</button>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="sidebar-head">
+        <h2>项目</h2>
+        <button class="btn btn-primary btn-sm" id="btn-new-project">+ 新建访谈</button>
+      </div>
+      <div class="project-list" id="project-list"></div>
+    </aside>
+
+    <main class="main" id="main">
+      <div class="empty">
+        <h3>还没有打开任何项目</h3>
+        <p>点击「新建访谈」上传一段录音，或从左侧选择一个历史项目。</p>
+        <p class="muted" style="font-size:12.5px">所有音频与文字都保存在本机 <span class="mono">projects/</span> 目录，不会上传到任何服务器。</p>
+      </div>
+    </main>
+  </div>
+
+  <div id="modal-root"></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+# Windows CPU-only runtime for the local interview transcription app.
+# Verified on: Windows 11 26200, Python 3.13.14, Intel i5-1235U, 32GB RAM.
+#
+# Install the PyTorch CPU wheels FIRST (they come from the PyTorch index, not PyPI):
+#   pip install -r requirements.txt
+# `torch==2.8.0` on Windows/PyPI is already the CPU build; no CUDA is required.
+
+# --- PyTorch (pinned by whisperx 3.8.6: torch~=2.8.0 / torchaudio~=2.8.0) ---
+torch==2.8.0
+torchaudio==2.8.0
+torchvision==0.23.0
+
+# --- ASR ---
+whisperx==3.8.6
+faster-whisper==1.2.1
+ctranslate2==4.8.5
+numpy>=2.1.0
+pandas>=2.2.3
+
+# --- Speaker diarization (pyannote Community-1) ---
+pyannote.audio==4.0.7
+torchcodec==0.7.0
+soundfile==0.14.0
+
+# --- Web UI / API ---
+fastapi==0.118.0
+uvicorn[standard]==0.37.0
+python-multipart==0.0.20
+requests>=2.32.0
+python-docx==1.2.0
+
+# --- Tests ---
+pytest==8.4.2
+httpx>=0.28.0

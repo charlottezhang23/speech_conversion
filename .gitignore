@@ -1,0 +1,26 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Runtime data (interviews are private!)
+projects/
+models/
+secrets/
+logs/
+tmp/
+config/
+tools/ffmpeg/
+tools/*.zip
+tools/rel.json
+tools/shared/
+
+# Test artefacts
+tests/fixtures/audio/*.wav
+tests/fixtures/audio/*.m4a
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

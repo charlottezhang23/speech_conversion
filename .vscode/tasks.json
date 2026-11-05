@@ -1,0 +1,489 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "restart-ollama",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\tools\\run_ollama_restart.cmd",
+			"group": "build"
+		},
+		{
+			"label": "llm-probe",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\tools\\run_llm_probe.cmd",
+			"group": "build"
+		},
+		{
+			"label": "kill-port",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\kill_port.py 7860",
+			"group": "build"
+		},
+		{
+			"label": "start-server",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\tools\\run_server.cmd",
+			"isBackground": true,
+			"group": "build"
+		},
+		{
+			"label": "pytest",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\tools\\run_tests.cmd",
+			"group": "test"
+		},
+		{
+			"label": "pytest",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\tools\\run_tests.cmd",
+			"group": "test"
+		},
+		{
+			"label": "kill-port",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\kill_port.py 7860",
+			"group": "build"
+		},
+		{
+			"label": "start-server",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\tools\\run_server.cmd",
+			"isBackground": true,
+			"group": "build"
+		},
+		{
+			"label": "restart-ollama",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\tools\\run_ollama_restart.cmd",
+			"group": "build"
+		},
+		{
+			"label": "start-server-detached",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\start_server.py 7860",
+			"group": "build"
+		},
+		{
+			"label": "pytest",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\tools\\run_tests.cmd",
+			"group": "test"
+		},
+		{
+			"label": "kill-port",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\kill_port.py 7860",
+			"group": "build"
+		},
+		{
+			"label": "start-server-detached",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\start_server.py 7860",
+			"group": "build"
+		},
+		{
+			"label": "pytest",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\tools\\run_tests.cmd",
+			"group": "test"
+		},
+		{
+			"label": "kill-port",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\kill_port.py 7860",
+			"group": "build"
+		},
+		{
+			"label": "start-server-detached",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\start_server.py 7860",
+			"group": "build"
+		},
+		{
+			"label": "long-summary-test",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\e2e_long_summary.py",
+			"isBackground": true,
+			"group": "build"
+		},
+		{
+			"label": "pytest-final",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\tools\\run_tests.cmd",
+			"group": "test"
+		},
+		{
+			"label": "reset-settings",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe -c \"import os; p=r'C:\\src\\speech_conversion\\config\\settings.json'; os.remove(p) if os.path.exists(p) else None; print('settings reset', os.path.exists(p))\"",
+			"group": "build"
+		},
+		{
+			"label": "reset-settings",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\reset_settings.py",
+			"group": "build"
+		},
+		{
+			"label": "reset-settings-2",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\reset_settings.py",
+			"group": "build"
+		},
+		{
+			"label": "pytest-isolated",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\tools\\run_tests.cmd",
+			"group": "test"
+		},
+		{
+			"label": "pytest-hf",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\tools\\run_tests.cmd",
+			"group": "test"
+		},
+		{
+			"label": "kill-port",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\kill_port.py 7860",
+			"group": "build"
+		},
+		{
+			"label": "start-server-detached",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\start_server.py 7860",
+			"group": "build"
+		},
+		{
+			"label": "pytest-device",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\tools\\run_tests.cmd",
+			"group": "test"
+		},
+		{
+			"label": "diarize-probe",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\diarize_probe.py",
+			"isBackground": true,
+			"group": "build"
+		},
+		{
+			"label": "diarize-probe-2",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\diarize_probe.py",
+			"isBackground": true,
+			"group": "build"
+		},
+		{
+			"label": "kill-port",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\kill_port.py 7860",
+			"group": "build"
+		},
+		{
+			"label": "start-server-detached",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\start_server.py 7860",
+			"group": "build"
+		},
+		{
+			"label": "pytest-clean",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\tools\\run_tests.cmd",
+			"group": "test"
+		},
+		{
+			"label": "kill-port",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\kill_port.py 7860",
+			"group": "build"
+		},
+		{
+			"label": "start-server-detached",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\start_server.py 7860",
+			"group": "build"
+		},
+		{
+			"label": "kill-port",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\kill_port.py 7860",
+			"group": "build"
+		},
+		{
+			"label": "start-server-detached",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\start_server.py 7860",
+			"group": "build"
+		},
+		{
+			"label": "bench-large-v3",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\model_bench.py --model large-v3",
+			"isBackground": true,
+			"group": "build"
+		},
+		{
+			"label": "diag-after-align",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\diag_split.py 20261103-133124-b6812e --examples 3 > C:\\src\\speech_conversion\\logs\\diag_after.txt 2>&1",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "diag-after-align2",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\diag_split.py 20261103-133124-b6812e --examples 3",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "show-range-after",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\diag_split.py 20261103-133124-b6812e --examples 2 --range 88-122",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "show-turns",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\diag_turns.py 20261103-133124-b6812e 80-110",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "show-range-0-40",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\diag_split.py 20261103-133124-b6812e --examples 2 --range 0-40",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "show-turns-13-40",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\diag_turns.py 20261103-133124-b6812e 13-40",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "pytest-final",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe -m pytest -q",
+			"isBackground": false,
+			"group": "test"
+		},
+		{
+			"label": "diag-words",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\diag_words.py 20261103-133124-b6812e 24-30",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "diag-word-quality",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\diag_word_quality.py",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "diag-words-15-27",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\diag_words.py 20261103-133124-b6812e 15-27",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "save-draft",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe -c \"import shutil; shutil.copy(r'C:\\src\\speech_conversion\\projects\\20261103-133124-b6812e\\transcript\\draft.json', r'C:\\src\\speech_conversion\\tmp\\draft_before.json'); print('saved')\"",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "snapshot-draft",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\snapshot_draft.py 20261103-133124-b6812e",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "show-range-after-trim",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\diag_split.py 20261103-133124-b6812e --examples 2 --range 18-34",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "compare-draft",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\compare_draft.py",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "show-turns-16-29",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\diag_turns.py 20261103-133124-b6812e 16-29",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "names-check",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\compare_draft.py",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "show-names",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\show_names.py",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "pytest-final-2",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe -m pytest -q",
+			"isBackground": false,
+			"group": "test"
+		},
+		{
+			"label": "diar-31-probe",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\diar_probe.py --model pyannote/speaker-diarization-3.1 --start 0 --end 300 --show 12-34",
+			"isBackground": true,
+			"group": "build"
+		},
+		{
+			"label": "pytest-hf",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe -m pytest -q",
+			"isBackground": false,
+			"group": "test"
+		},
+		{
+			"label": "check-hf-repos",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\check_hf_repos.py",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "check-hf-repos-2",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\check_hf_repos.py",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "pytest-hf2",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe -m pytest -q",
+			"isBackground": false,
+			"group": "test"
+		},
+		{
+			"label": "check-hf-repos-3",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\check_hf_repos.py",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "compare-turns",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\compare_turns.py 20261103-133124-b6812e 0-300",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "diff-pyannote-config",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\diff_pyannote_config.py",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "recluster-300",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\speaker_recluster.py --start 0 --end 300",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "recluster-margins",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\recluster_bench.py --start 0 --end 300",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "pytest-recluster",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe -m pytest tests\\test_recluster.py -q",
+			"isBackground": false,
+			"group": "test"
+		},
+		{
+			"label": "pytest-recluster-2",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe -m pytest tests\\test_recluster.py -q",
+			"isBackground": false,
+			"group": "test"
+		},
+		{
+			"label": "pytest-all-3",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe -m pytest -q",
+			"isBackground": false,
+			"group": "test"
+		},
+		{
+			"label": "show-range-refined",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\diag_split.py 20261103-133124-b6812e --examples 2 --range 12-36",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "compare-refine",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe C:\\src\\speech_conversion\\tools\\compare_refine.py",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "pytest-final-3",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe -m pytest -q",
+			"isBackground": false,
+			"group": "test"
+		},
+		{
+			"label": "pytest-ui",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe -m pytest -q",
+			"isBackground": false,
+			"group": "test"
+		},
+		{
+			"label": "pytest-final-4",
+			"type": "shell",
+			"command": "C:\\src\\speech_conversion\\.venv\\Scripts\\python.exe -m pytest -q",
+			"isBackground": false,
+			"group": "test"
+		}
+	]
+}
